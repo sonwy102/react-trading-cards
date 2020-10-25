@@ -16,6 +16,12 @@ def show_cards():
 
     return render_template('cards.html')
 
+@app.route('/author')
+def show_author():
+    """Show info about author."""
+
+    return render_template('about.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
